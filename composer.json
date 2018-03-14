@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "CraftedSystems\\InfoSky\\Infosky-smsServiceProvider"
+                "CraftedSystems\\InfoSky\\InfoSkySMSServiceProvider"
             ]
         }
     },
