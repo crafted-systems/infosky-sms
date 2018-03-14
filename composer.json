@@ -1,0 +1,27 @@
+{
+    "name": "crafted-systems/infosky-sms",
+    "description": "Info Sky SMS API",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.*"
+    },
+    "author": {
+        "name": "Crafted Systems",
+        "email": "rafted Systems"
+    },
+    "autoload": {
+        "psr-4": {
+            "CraftedSystems\\InfoSky\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CraftedSystems\\InfoSky\\Infosky-smsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
