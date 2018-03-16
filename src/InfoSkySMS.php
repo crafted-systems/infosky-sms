@@ -86,7 +86,7 @@ class InfoSkySMS
 
         $response = Request::post(self::BASE_URL, $headers, Body::json($body));
 
-        return $response->body;
+        return $response->body[0];
 
     }
 
