@@ -99,9 +99,14 @@ class InfoSkySMS
         return json_decode($request->getContent());
     }
 
+    /**
+     * @return float
+     */
     public function getBalance()
     {
-        return 0;
+        $endpoint = 'http://isms.infosky.co.ke/sms2/api/v1/account/balance?acc_no=' . $this->settings->acc_no . '&api_key=' . $this->settings->api_key;
+
+        return (float)Request::get($endpoint)->body->balance->amount;
     }
 
 }
